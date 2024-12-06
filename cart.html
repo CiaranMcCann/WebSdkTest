@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <script src="./SwrveSDK.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearthstone - Your Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f1ff;
+        }
+    </style>
+</head>
+<body class="bg-[#f0f1ff]">
+    <header class="bg-white py-2 px-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-search text-gray-500"></i>
+                <h1 class="text-3xl font-bold">Hearthstone</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-sm">
+                    <li>Outdoor</li>
+                    <li>Furniture</li>
+                    <li>Decorating</li>
+                    <li>Kitchen</li>
+                    <li>Dining</li>
+                    <li>Apparel + Accessories <i class="fas fa-chevron-down ml-1"></i></li>
+                </ul>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <i class="far fa-user"></i>
+                <div class="relative">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">1</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto mt-8 px-4">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-4xl font-bold">Your cart</h2>
+            <a href="#" class="text-gray-600 underline">Continue shopping</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-6">
+            <div class="flex justify-between items-center text-sm text-gray-500 mb-4">
+                <span>PRODUCT</span>
+                <div class="flex space-x-24">
+                    <span>QUANTITY</span>
+                    <span>TOTAL</span>
+                </div>
+            </div>
+            <div class="flex justify-between items-center py-4 border-t border-gray-200">
+                <div class="flex items-center space-x-4">
+                    <img src="https://replicate.delivery/xezq/1jfzBxKee1Nnhps8AgCzH6NoiMVShWwmvQPUwcdJqg6g7SwnA/out-0.png" alt="White wooden fence with pink flowers in front" class="w-24 h-24 object-cover rounded-md">
+                    <div>
+                        <h3 class="font-semibold">Wooden Fence</h3>
+                        <p class="text-gray-500">$200.00</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <div class="flex items-center border rounded-md">
+                        <button class="px-3 py-1 text-gray-500">-</button>
+                        <input type="text" value="1" class="w-8 text-center">
+                        <button class="px-3 py-1 text-gray-500">+</button>
+                    </div>
+                    <i class="fas fa-trash text-gray-400"></i>
+                    <span class="font-semibold">$200.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 flex justify-end">
+            <div class="w-1/3">
+                <div class="flex justify-between mb-2">
+                    <span class="font-semibold">Estimated total</span>
+                    <span class="font-semibold">$200.00 USD</span>
+                </div>
+                <p class="text-sm text-gray-500 mb-4">Taxes, discounts and shipping calculated at checkout.</p>
+                <button class="w-full bg-gray-800 text-white py-3 rounded-md">Check out</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white mt-16 py-12">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Subscribe to our emails</h2>
+            <p class="text-gray-600 mb-6">Subscribe to our mailing list for insider news, product launches, and more.</p>
+            <form class="flex justify-center">
+                <input type="email" placeholder="Email" class="border border-gray-300 px-4 py-2 rounded-l-md w-64">
+                <button type="submit" class="bg-black text-white px-6 py-2 rounded-r-md">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-gray-100 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Shop</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">New Arrivals</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Best Sellers</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Sale</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">All Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Our Story</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Careers</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">FAQ</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-gray-900"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-gray-900"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-gray-900"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-gray-900"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-200">
+                <p class="text-center text-gray-500 text-sm">&copy; 2023 Hearthstone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-[#e6e8ff] py-2 text-center text-sm">
+        Fast Shipping | 30-Day Return Guarantee
+    </div>
+</body>
+<script src="./swrve_code.js"></script>
+</html>
