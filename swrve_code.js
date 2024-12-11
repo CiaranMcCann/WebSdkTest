@@ -22,6 +22,7 @@ addToCartButtons.forEach((button) => {
                 "item_id": itemId
             });
             console.log("add_to_cart")
+            window.location = `./cart.html?${window.location.search.substring(1)}`
         } else {
             console.error("Product variant input not found");
         }
